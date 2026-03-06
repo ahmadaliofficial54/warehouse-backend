@@ -46,6 +46,13 @@ npm run start:dev
 API base URL: `http://localhost:3001/api/v1`
 Swagger URL: `http://localhost:3001/docs`
 
+## Vercel Deploy
+
+- `vercel.json` is configured for serverless Nest handler at `api/index.ts`
+- In Vercel project settings, set Root Directory to `warehouse-backend` (if deploying from parent workspace)
+- Add env vars in Vercel: `MONGO_URI`, `JWT_SECRET`, `JWT_EXPIRES_IN`, `CORS_ORIGIN`
+- Recommended `CORS_ORIGIN` value: your frontend deployed URL
+
 ## Seed Demo Data
 
 ```bash
